@@ -1,0 +1,40 @@
+/* Styles go here */
+
+
+html {
+  color: #FFF;
+  height: 100%;
+  background: #283E51;
+  background: linear-gradient(to right bottom, #283E51, #4B79A1);
+  font-family: 'Montserrat';
+}
+
+
+.navbar_div {
+  background: #283E51;
+  background: linear-gradient(to right bottom, #4B79A1, #283E51);
+  overflow: hidden; /* background wouldn't show without this */
+}
+
+.navbar {
+  
+}
+
+.navbar li {
+  list-style-type: none;
+  float: left; /* left to right instead of top to bottom*/
+  /* ---- #TODO: Make dynamic value ----*/
+  width: 100px; 
+  display: block; /*makes region and text clickable...or does it?*/
+  
+}
+
+.navbar li a {
+  text-decoration: none; /*removes underline from  links*/
+  color: white;
+}
+
+li a:hover {
+  /* ---- #TODO: change colors upon hover ---- */
+  background-color: #283E51;
+}

@@ -1,23 +1,34 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
 
-<div class="home">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat">
+    <script src="script.js"></script>
+  </head>
 
-  <h1 class="page-heading">Posts</h1>
+  <body>
+    
+    <div class="container">
+      
+      <div class="header">
+        <h1 style="font-size:96px; text-align: center;">Room Temp</h1>
+        <h3 style="text-align: center;">Heating & Air LLC | Home and Commercial | Phone: 404.641.0400</h3>
+      </div>
+  
+  <!-- TODO: Proper format for constants like nav bar. Should they be referenced from another file?--> 
+      
+      <div class="navbar_div">
+        <ul class= "navbar">
+          <li><a href="about.html"> About </a></li>
+          <li><a href="faq.html">FAQ / DIY</a></li>
+          <li><a href="contact.html"> Contact </a></li>
+          <li style="width: 130px; "><a href="charge.html"> Service Charges </a></li>
+        </ul>
+      </div>
+      
+    </div>
+  </body>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+</html>
