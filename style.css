@@ -1,40 +1,60 @@
 /* Styles go here */
 
 
-html {
-  color: #FFF;
+/*sets dimensions of pane classes to be half of screen dim*/
+.pane {
   height: 100%;
-  background: #283E51;
-  background: linear-gradient(to right bottom, #283E51, #4B79A1);
-  font-family: 'Montserrat';
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+ 
+}
+
+/*Controls Left Side*/
+
+.left {
+  left: 0;
+  background-color: #3D9970;
 }
 
 
-.navbar_div {
-  background: #283E51;
-  background: linear-gradient(to right bottom, #4B79A1, #283E51);
-  overflow: hidden; /* background wouldn't show without this */
+
+
+/*Controls Left Side*/
+
+.right {
+  left: 50%;
+  background-color: white;
 }
 
-.navbar {
+
+/*Centered content*/
+.centered_content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 10%;
+  transform: translate(-50%, -50%);
+  text-align:center;
+}
+
+.background_img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align:center;
   
+  width:200%;
 }
 
-.navbar li {
-  list-style-type: none;
-  float: left; /* left to right instead of top to bottom*/
-  /* ---- #TODO: Make dynamic value ----*/
-  width: 100px; 
-  display: block; /*makes region and text clickable...or does it?*/
-  
-}
 
-.navbar li a {
-  text-decoration: none; /*removes underline from  links*/
-  color: white;
-}
 
-li a:hover {
-  /* ---- #TODO: change colors upon hover ---- */
-  background-color: #283E51;
-}
+
+
+
+
+
