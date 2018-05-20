@@ -1,0 +1,60 @@
+/* Styles go here */
+
+
+/*sets dimensions of pane classes to be half of screen dim*/
+.pane {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+ 
+}
+
+/*Controls Left Side*/
+
+.left {
+  left: 0;
+  background-color: #3D9970;
+}
+
+
+
+
+/*Controls Left Side*/
+
+.right {
+  left: 50%;
+  background-color: white;
+}
+
+
+/*Centered content*/
+.centered_content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 10%;
+  transform: translate(-50%, -50%);
+  text-align:center;
+}
+
+.background_img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align:center;
+  
+  width:200%;
+}
+
+
+
+
+
+
+
+
