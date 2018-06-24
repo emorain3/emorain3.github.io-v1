@@ -1,18 +1,105 @@
 /* Styles go here */
 
+/*******Notes:
+    - May be useful to put images in divs
+*/
+
+:root{
+  --lightsalmon:#f39e99;
+    --lightsalmonShadow:#FF7972;
+    --lightsalmonHighlight: #FF958F;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    direction: rtl;
+/*    background:paleturquoise;*/
+    background-color: beige;
+}
+
+
+.page-container{
+    webkit-box-orient:horizontal
+
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+/*Allignment Rules for both sections*/
+.split-section {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+    
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+    
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+    
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  
+ 
+  /*padding: 3em 5em 6em 5em;*/
+}
+
 
 /*Controls Left Side*/
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul.navbar li a {
+    display:block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color:white;
+    text-align: center;
+    font-size: 2.5rem;
+    /*background-color: antiquewhite;*/
+}
+ul.navbar a:hover {
+    background-color: lightsalmonHighlight;
+    color: antiquewhite;
+}
+ul.navbar .active {
+    background-color: lightsalmonHighlight;
+    color: white;
+}
+
 
 .left-pane {
   left: 0;
   height: 100%;
   width: 25%;
-  background-color: #3D9970;
+  background-color: lightsalmon;
   
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   top: 0;
-  overflow-x: scroll;
+  overflow-x: hidden;
   padding-top: 20px;
  
 }
@@ -22,46 +109,75 @@
 /*Controls Right Side*/
 
 .right-pane {
-  height: 100%;
-  left: 25%;
-  background-color: grey;
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1;
+/*
+    margin-top: 300px;
+    margin-left: 500px; /* Doesn't seem to have any affect /
+*/
+    
+    background: white;
+    color: black; /*Text color*/
+    width: 75%; /*Actually determines where the left starts -since flexbox*/
+    height:96.3%;
+    position:absolute;
 
-  width: 75%;
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
- 
+    z-index: 1;
+    overflow-x:scroll;
+    
 }
 
 
-
-
-/*Centered content*/
-.centered_content{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align:center;
-
-}
-
-.background-img{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
-  
-  width:150%;
+.right-page-img{
+    height:auto;
+    margin: 2em auto;
+/*    width:75%;*/
+   max-width:75%;
+    
+/*    border-radius: 50%;*/
+    display: block;
 }
 
 
+.footer {
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    
+    color: #222;
+    background: #666;
+    text-align: center;
+    font-size: 1.5rem;
+    
+/*    box-sizing: border-box;*/
+   
+    height: 4.5rem;
+    
+    z-index: 2;
+}
 
+/*
+ul.footerLinks {
+    float:left;
+}
+*/
 
+ul.footerLinks li {
+    list-style-type: none;
+    display: inline;
+    color: aliceblue;
+    padding: 30px;
+}
 
+p.mediumtext {
+    font-size: 2rem;
+}
 
-
-
+p.smalltext {
+    font-size: 1.5rem;
+    color: antiquewhite;
+    text-decoration: none;
+}
