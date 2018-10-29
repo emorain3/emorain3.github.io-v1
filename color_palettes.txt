@@ -1,0 +1,16 @@
+standard_green = #1c801a
+frosty green = #5a835a
+
+###### 50's Palette
+mustard_yellow = #E4A638 
+pale_mustard = #E6A840 | #e6b25c
+pale_plum = #9E2D4A
+burgundy_plum = #821135
+pale_green = #86DB9E
+scarlet = #C32622
+lightseagreen = #3499a1
+burlywood = #f2b286
+lightsalmon = #ff9683
+green = #588751
+indigo = #431c75
+khaki = #e7d49a

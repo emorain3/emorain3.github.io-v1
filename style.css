@@ -1,0 +1,109 @@
+/* Styles go here */
+@font-face {
+    font-family: "OriginalSurfer-Regular";
+    src: url("fonts/OriginalSurfer-Regular.ttf")format('truetype');
+}
+html, body {
+    --khaki: #e7d49a;
+        --mustard_yellow: #E4A638;
+    --lightsalmon: #ff9683;
+    --indigo: #431c75;
+    --olivegreen: #588751;
+    --scarlet: #C32622;
+    --burgundy_plum: #821135;
+}
+body{
+    background-color: var(--mustard_yellow);
+}
+
+/*  HEADER   */
+.header{
+    
+}
+
+
+
+/*  MIDDLE  */
+.middler{
+  background-color: var(--mustard_yellow);
+  height: 83vh; /*vh = wrt body dimenssion*/
+}
+
+.middler > .rectangles {
+    background-color: var(--mustard_yellow);
+    height: 65%;
+    width: 45%;
+    position: relative;
+    top: 10%;
+    left: 25%;
+}
+
+.rectangle.one{
+    background-color: var(--khaki);
+    position: relative;
+    height: 230px;
+    width:175px;
+    top: 100px;
+    opacity: .66;
+}
+.rectangle.two{
+    background-color: var(--burgundy_plum);
+    position: relative;
+    height: 400px;
+    width:190px;
+    top:-180px;
+    left: 175px;
+    opacity: .77;
+}
+.rectangle.three{
+    background-color: var(--olivegreen);
+    position: relative;
+    height: 230px;
+    width:190px;
+    top:-460px;
+    left: 365px;
+    opacity: .72;
+}
+.rectangle.four{
+    background-color: var(--scarlet);
+    position: relative;
+    height: 330px;
+    width:190px;
+    top:-860px;
+    left: 555px;
+}
+
+.fro-home{
+    position: relative;
+    top:-1060px;
+    left: 20px;
+}
+
+.folder-home{
+    position: relative;
+    top:-1045px;
+    left: 330px;
+}
+
+
+/*   FOOTER   */
+footer{
+    
+}
+.footer > p {
+  background-color: white;
+    height:6vh;
+    font-family: "OriginalSurfer-Regular";
+  text-align: right;
+    padding-right: 150px;
+}
+
+
+
+
+
+
+
+
+
+
