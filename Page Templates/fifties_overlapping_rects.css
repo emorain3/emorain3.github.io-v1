@@ -1,0 +1,68 @@
+/* Styles go here */
+html, body {
+    --khaki: #e7d49a;
+    --lightsalmon: #ff9683;
+    --indigo: #431c75;
+    --olivegreen: #588751;
+    --scarlet: #C32622;
+}
+body{
+    background-color: #E4A638 ;
+}
+
+/*  HEADER   */
+.header{
+    
+}
+
+
+
+/*  MIDDLE  */
+.middler{
+  background-color: aqua;
+  height: 83vh; /*vh = wrt body dimenssion*/
+}
+
+.middler > .rectangle {
+    height: 256px;
+    width: 256px;
+}
+
+.rectangle.one{
+    background-color: lightsalmon;
+    position: relative;
+}
+.rectangle.two{
+    background-color: blueviolet;
+}
+.rectangle.three{
+    background-color: olivegreen;
+}
+.rectangle.four{
+    background-color: scarlet;
+}
+.rectangle.five{
+    background-color: lightsalmon;
+}
+
+
+
+
+
+/*   FOOTER   */
+
+.footer > p {
+  text-align: right;
+    padding-right: 150px;
+  background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
